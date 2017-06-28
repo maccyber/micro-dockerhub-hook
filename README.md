@@ -76,9 +76,9 @@ Git clone
 git clone http://github.com/maccyber/micro-dockerhub-hook
 ```
 
-Add secret token in dockerhub.env with
+Add secret token in docker.env with
 ```sh
-vim dockerhub.env
+vim docker.env
 ```
 
 Start with
