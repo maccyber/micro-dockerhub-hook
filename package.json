@@ -1,0 +1,42 @@
+{
+  "name": "micro-dockerhub-hook",
+  "version": "1.0.0",
+  "description": "docker hub webhook",
+  "main": "index.js",
+  "scripts": {
+    "start": "micro",
+    "test": "standard && nsp check && ava",
+    "coverage": "nyc ava",
+    "coveralls": "nyc ava && nyc report --reporter=lcov && cat coverage/lcov.info | coveralls"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maccyber/micro-dockerhub-hook.git"
+  },
+  "keywords": [
+    "dockerhub",
+    "webhook",
+    "automatedbuilds"
+  ],
+  "author": {
+    "name": "Jonas Enge",
+    "email": "jonas.enge@gmail.com",
+    "url": "https://github.com/maccyber"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/maccyber/micro-dockerhub-hook/issues"
+  },
+  "homepage": "https://github.com/maccyber/micro-dockerhub-hook#readme",
+  "devDependencies": {
+    "ava": "^0.20.0",
+    "coveralls": "^2.13.1",
+    "nsp": "^2.6.3",
+    "nyc": "^11.0.3",
+    "axios": "^0.16.2",
+    "test-listen": "^1.0.2"
+  },
+  "dependencies": {
+    "micro": "^7.3.3"
+  }
+}
