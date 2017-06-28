@@ -46,7 +46,7 @@ npm i
 See [config.js](config.js)
 
 ```sh
-vim config/index.js
+vim config.js
 ```
 
 ### Configure repos and scripts
