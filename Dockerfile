@@ -4,7 +4,7 @@
 #
 ###########################################################
 
-# Setting the base to nodejs 7
+# Setting the base to nodejs 8
 FROM mhart/alpine-node:8
 
 # Maintainer
