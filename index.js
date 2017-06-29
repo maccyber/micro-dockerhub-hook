@@ -16,6 +16,7 @@ module.exports = async (req, res) => {
   } catch (e) {
     logger('err', e.message)
     send(res, 400, e.message)
+    return
   }
   // everything is on it's right place...
   send(res, 204) // sends 'no content' to client
