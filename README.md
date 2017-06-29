@@ -5,6 +5,8 @@
 
 # micro-dockerhub-hook
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/maccyber/micro-dockerhub-hook.svg)](https://greenkeeper.io/)
+
 Automatic [docker](https://www.docker.com) deployment with [webhooks](https://docs.docker.com/docker-hub/builds/#webhooks).
 
 micro-dockerhub-hook listens to incoming HTTP POST-requests from hub.docker.com and triggers your specified script(s).
