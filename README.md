@@ -2,6 +2,7 @@
 [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat)](https://github.com/feross/standard)
 [![Coverage Status](https://coveralls.io/repos/github/maccyber/micro-dockerhub-hook/badge.svg)](https://coveralls.io/github/maccyber/micro-dockerhub-hook)
 [![Code Climate](https://codeclimate.com/github/maccyber/micro-dockerhub-hook/badges/gpa.svg)](https://codeclimate.com/github/maccyber/micro-dockerhub-hook)
+[![Greenkeeper badge](https://badges.greenkeeper.io/maccyber/micro-dockerhub-hook.svg)](https://greenkeeper.io/)
 
 # micro-dockerhub-hook
 
