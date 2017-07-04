@@ -13,7 +13,42 @@ const getUrl = fn => {
 
 test('full test', async t => {
   const url = await getUrl(srv)
-  const payload = require('./payload.json')
+  const payload = require('./data/payload.json')
+  const result = await axios.post(`${url}/${config.token}`, payload)
+  t.is(result.status, 204)
+})
+
+test('wrong token', async t => {
+  const url = await getUrl(srv)
+  const payload = require('./data/payload.json')
+  try {
+    await axios.post(`${url}/wrongtoken`, payload)
+  } catch (e) {
+    t.is(e.message, 'Request failed with status code 400')
+  }
+})
+
+test('wrong hook', async t => {
+  const url = await getUrl(srv)
+  const payload = require('./data/payload-wrong-hook.json')
+  try {
+    await axios.post(`${url}/${config.token}`, payload)
+  } catch (e) {
+    t.is(e.response.status, 400)
+    t.is(e.message, 'Request failed with status code 400')
+  }
+})
+
+test('fail script', async t => {
+  const url = await getUrl(srv)
+  const payload = require('./data/payload-with-error-hook.json')
+  const result = await axios.post(`${url}/${config.token}`, payload)
+  t.is(result.status, 204)
+})
+
+test('with tag', async t => {
+  const url = await getUrl(srv)
+  const payload = require('./data/payload-tag.json')
   const result = await axios.post(`${url}/${config.token}`, payload)
   t.is(result.status, 204)
 })

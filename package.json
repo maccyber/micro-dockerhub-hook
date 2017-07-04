@@ -1,6 +1,6 @@
 {
   "name": "micro-dockerhub-hook",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "docker hub webhook",
   "main": "index.js",
   "scripts": {

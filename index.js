@@ -12,7 +12,7 @@ module.exports = async (req, res) => {
   logger('debug', `Requesting ${pathname}`)
 
   try {
-    validateReq({pathname, payload, hooks}) // validates token and payload
+    await validateReq({pathname, payload, hooks}) // validates token and payload
   } catch (e) {
     logger('err', e.message)
     send(res, 400, e.message)
