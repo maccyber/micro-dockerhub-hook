@@ -23,6 +23,6 @@ test('run-script fail', async t => {
   try {
     await runScript('notexist.sh')
   } catch (e) {
-    t.true(e.includes('No such file or directory'))
+    t.true(e.includes('Command failed'))
   }
 })
