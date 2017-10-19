@@ -7,7 +7,14 @@ const runScript = require('./lib/run-script')
 module.exports = async (req, res) => {
   const hooks = require('./scripts')
   const { pathname } = await parse(req.url, false) // gets url path
-  const payload = await json(req) // gets payload
+
+  let payload
+  try {
+    payload = await json(req) // gets payload
+  } catch (e) {
+    logger('err', 'Missing JSON payload')
+    return send(res, 400, 'Missing JSON payload')
+  }
 
   logger('debug', `Requesting ${pathname}`)
 
@@ -15,8 +22,7 @@ module.exports = async (req, res) => {
     await validateReq({pathname, payload, hooks}) // validates token and payload
   } catch (e) {
     logger('err', e.message)
-    send(res, 400, e.message)
-    return
+    return send(res, 400, e.message)
   }
   // everything is on it's right place...
   send(res, 204) // sends 'no content' to client
