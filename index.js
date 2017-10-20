@@ -35,6 +35,7 @@ module.exports = async (req, res) => {
   try {
     const result = await runScript(hook) // runs script
     logger('debug', result)
+    logger('debug', `Finished running hook "${hook}" for repository "${payload.repository.repo_name}"`)
   } catch (e) {
     logger('err', e)
   }
