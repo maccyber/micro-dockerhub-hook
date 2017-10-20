@@ -118,3 +118,20 @@ Replace ``example.com`` with the domain of your server or it's ip address.
 Replace ``abc123`` with your secret token.
 
 docker-hook listens to port 3000 by default.
+
+# Testing on local machine
+
+Setup the development environment
+
+```sh
+git clone https://github.com/maccyber/micro-dockerhub-hook/
+cd micro-dockerhub-hook
+npm i
+npm run dev
+```
+
+Run test with ```curl``` 
+
+```sh
+curl -i -d @test/routes/data/payload.json http://localhost:3000/$TOKEN
+```
