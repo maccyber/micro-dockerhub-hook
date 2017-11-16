@@ -19,6 +19,20 @@ test('run-script hello.sh parameters', async t => {
   t.true(res.includes('parameter1\nparameter2'))
 })
 
+test('run-script payload_to_env.sh', async t => {
+  const payload = {
+    push_data: {
+      tag: 'v1.0.0-rc1'
+    },
+    repository: {
+      repo_name: 'micro-dockerhub-hook'
+    }
+  }
+  const res = await runScript('payload_to_env.sh', payload)
+  t.true(res.includes(`${payload.push_data.tag}`))
+  t.true(res.includes(`${payload.repository.repo_name}`))
+})
+
 test('run-script fail', async t => {
   try {
     await runScript('notexist.sh')
