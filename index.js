@@ -33,7 +33,7 @@ module.exports = async (req, res) => {
 
   const hook = hooks[`${payload.repository.repo_name}:${payload.push_data.tag}`] || hooks[payload.repository.repo_name] // looks for tag first
   try {
-    const result = await runScript(hook) // runs script
+    const result = await runScript(hook, payload) // runs script
     logger('debug', result)
     logger('debug', `Finished running hook "${hook}" for repository "${payload.repository.repo_name}"`)
   } catch (e) {
