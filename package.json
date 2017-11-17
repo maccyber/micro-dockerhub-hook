@@ -1,6 +1,6 @@
 {
   "name": "micro-dockerhub-hook",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "docker hub webhook",
   "main": "index.js",
   "scripts": {
@@ -34,7 +34,7 @@
     "axios": "^0.17.0",
     "coveralls": "^3.0.0",
     "micro-dev": "^1.2.3",
-    "nsp": "^3.0.0",
+    "nsp": "^3.1.0",
     "nyc": "^11.0.3",
     "standard": "^10.0.2",
     "test-listen": "^1.0.2"
