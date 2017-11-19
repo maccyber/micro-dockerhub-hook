@@ -130,8 +130,8 @@ npm i
 npm run dev
 ```
 
-Run test with ```curl``` 
+Run test with ```curl```
 
 ```sh
-curl -i -d @test/routes/data/payload.json http://localhost:3000/$TOKEN
+curl -i -d @test/data/payload.json http://localhost:3000/$TOKEN
 ```
