@@ -3,8 +3,8 @@ const test = require('ava')
 const listen = require('test-listen')
 const axios = require('axios')
 const micro = require('micro')
-const srv = require('../../index')
-const config = require('../../config')
+const srv = require('../index')
+const config = require('../config')
 
 const getUrl = fn => {
   const srv = micro(fn)

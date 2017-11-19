@@ -1,5 +1,5 @@
 const test = require('ava')
-const runScript = require('../../lib/run-script')
+const runScript = require('../lib/run-script')
 
 test('run-script fail.sh', async t => {
   try {

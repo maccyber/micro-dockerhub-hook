@@ -1,8 +1,8 @@
 process.env.DEBUG = 'false'
 const test = require('ava')
-const validateReq = require('../../lib/validate-req')
-const config = require('../../config')
-const hooks = require('../../scripts')
+const validateReq = require('../lib/validate-req')
+const config = require('../config')
+const hooks = require('../scripts')
 
 test('no token given', t => {
   try {

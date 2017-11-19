@@ -26,12 +26,9 @@ module.exports = async (req, res) => {
   }
   // everything is on it's right place...
   send(res, 204) // sends 'no content' to client
-
-  logger('debug', 'Payload from docker hub:')
-  logger('debug', payload)
-  logger('debug', `Running hook on repo: ${payload.repository.repo_name}`)
-
+  logger('debug', `Payload from docker hub:\n ${JSON.stringify(payload, null, 2)} \nRunning hook on repo: ${payload.repository.repo_name}`)
   const hook = hooks[`${payload.repository.repo_name}:${payload.push_data.tag}`] || hooks[payload.repository.repo_name] // looks for tag first
+
   try {
     const result = await runScript(hook, payload) // runs script
     logger('debug', result)
