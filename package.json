@@ -31,15 +31,15 @@
   "homepage": "https://github.com/maccyber/micro-dockerhub-hook#readme",
   "devDependencies": {
     "ava": "^0.25.0",
-    "axios": "^0.17.0",
+    "axios": "^0.17.1",
     "coveralls": "^3.0.0",
-    "micro-dev": "^2.0.0",
+    "micro-dev": "^2.2.0",
     "nsp": "^3.1.0",
-    "nyc": "^11.0.3",
-    "standard": "^10.0.2",
-    "test-listen": "^1.0.2"
+    "nyc": "^11.4.1",
+    "standard": "^10.0.3",
+    "test-listen": "^1.1.0"
   },
   "dependencies": {
-    "micro": "^9.0.0"
+    "micro": "^9.1.0"
   }
 }
