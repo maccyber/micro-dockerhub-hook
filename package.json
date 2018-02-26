@@ -36,7 +36,7 @@
     "micro-dev": "^2.2.0",
     "nsp": "^3.1.0",
     "nyc": "^11.4.1",
-    "standard": "^10.0.3",
+    "standard": "^11.0.0",
     "test-listen": "^1.1.0"
   },
   "dependencies": {
