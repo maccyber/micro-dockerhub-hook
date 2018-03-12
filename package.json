@@ -34,12 +34,12 @@
     "axios": "^0.18.0",
     "coveralls": "^3.0.0",
     "micro-dev": "^2.2.0",
-    "nsp": "^3.1.0",
+    "nsp": "^3.2.1",
     "nyc": "^11.4.1",
     "standard": "^11.0.0",
     "test-listen": "^1.1.0"
   },
   "dependencies": {
-    "micro": "^9.1.0"
+    "micro": "^9.1.4"
   }
 }
