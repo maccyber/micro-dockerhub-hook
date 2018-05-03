@@ -1,6 +1,7 @@
 language: node_js
 node_js:
   - "8"
+  - "10"
 after_success:
   - npm run coveralls
   - curl --date build=true -X POST https://registery.hub.docker.com/u/maccyber/dockerhub-webhook-api/trigger/$triggerToken/
