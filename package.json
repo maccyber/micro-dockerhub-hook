@@ -30,16 +30,16 @@
   },
   "homepage": "https://github.com/maccyber/micro-dockerhub-hook#readme",
   "devDependencies": {
-    "ava": "^0.25.0",
-    "axios": "^0.18.0",
-    "coveralls": "^3.0.0",
-    "micro-dev": "^3.0.0",
-    "nsp": "^3.2.1",
-    "nyc": "^11.4.1",
-    "standard": "^11.0.0",
-    "test-listen": "^1.1.0"
+    "ava": "0.25.0",
+    "axios": "0.18.0",
+    "coveralls": "3.0.1",
+    "micro-dev": "3.0.0",
+    "nsp": "3.2.1",
+    "nyc": "12.0.1",
+    "standard": "11.0.1",
+    "test-listen": "1.1.0"
   },
   "dependencies": {
-    "micro": "^9.1.4"
+    "micro": "9.3.2"
   }
 }
