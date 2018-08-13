@@ -40,6 +40,6 @@
     "test-listen": "1.1.0"
   },
   "dependencies": {
-    "micro": "9.3.2"
+    "micro": "9.3.3"
   }
 }
