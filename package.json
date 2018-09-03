@@ -6,7 +6,7 @@
   "scripts": {
     "start": "micro",
     "dev": "micro-dev -H localhost",
-    "test": "standard && nsp check && ava",
+    "test": "standard && ava",
     "coverage": "nyc ava",
     "coveralls": "nyc ava && nyc report --reporter=lcov && cat coverage/lcov.info | coveralls"
   },
@@ -34,9 +34,8 @@
     "axios": "0.18.0",
     "coveralls": "3.0.2",
     "micro-dev": "3.0.0",
-    "nsp": "3.2.1",
     "nyc": "13.0.1",
-    "standard": "11.0.1",
+    "standard": "12.0.1",
     "test-listen": "1.1.0"
   },
   "dependencies": {
