@@ -31,7 +31,7 @@ RUN npm install --production
 
 # Env variables
 ENV SERVER_PORT 3000
-ENV TOKEN abc123
+# ENV TOKEN abc123
 # ENV DEBUG DISABLE
 
 # Expose 3000
