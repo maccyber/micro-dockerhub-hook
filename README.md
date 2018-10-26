@@ -5,7 +5,7 @@
 
 # micro-dockerhub-hook
 
-Automatic [docker](https://www.docker.com) deployment with [webhooks](https://docs.docker.com/docker-hub/builds/#webhooks).
+Automatic [docker](https://www.docker.com) deployment with [webhooks](https://docs.docker.com/docker-hub/webhooks/).
 
 micro-dockerhub-hook listens to incoming HTTP POST-requests from hub.docker.com and triggers your specified script(s).
 
