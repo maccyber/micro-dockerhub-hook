@@ -110,7 +110,7 @@ Go to https://hub.docker.com/ -> your repo -> Webhooks
 
 Add a webhook like on the following image.
 
-![alt tag](http://bildr.no/image/cFIrR0Ir.jpeg)
+![alt tag](https://i.imgur.com/DcAAA8G.png)
 
 Replace ``example.com`` with the domain of your server or it's ip address.
 
