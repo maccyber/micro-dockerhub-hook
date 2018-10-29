@@ -8,6 +8,8 @@ module.exports = async (req, res) => {
   const hooks = require('./scripts')
   const { pathname } = await parse(req.url, false) // gets url path
 
+  if (pathname === '/ping') return send(res, 200, 'pong')
+
   let payload
   try {
     payload = await json(req) // gets payload
