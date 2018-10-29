@@ -5,7 +5,7 @@
 
 # micro-dockerhub-hook
 
-Automatic [docker](https://www.docker.com) deployment with [webhooks](https://docs.docker.com/docker-hub/builds/#webhooks).
+Automatic [docker](https://www.docker.com) deployment with [webhooks](https://docs.docker.com/docker-hub/webhooks/).
 
 micro-dockerhub-hook listens to incoming HTTP POST-requests from hub.docker.com and triggers your specified script(s).
 
@@ -110,7 +110,7 @@ Go to https://hub.docker.com/ -> your repo -> Webhooks
 
 Add a webhook like on the following image.
 
-![alt tag](http://bildr.no/image/cFIrR0Ir.jpeg)
+![alt tag](https://i.imgur.com/DcAAA8G.png)
 
 Replace ``example.com`` with the domain of your server or it's ip address.
 
