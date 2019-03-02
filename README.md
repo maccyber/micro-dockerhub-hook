@@ -97,7 +97,7 @@ Start with
 ```sh
 docker run -d \
   -p 3000:3000 \
-  -e TOKEN=${token} \
+  -e TOKEN=${TOKEN} \
   -v ${PWD}/scripts:/src/scripts \
   -v /var/run/docker.sock:/var/run/docker.sock \
   --name micro-dockerhub-hook \
