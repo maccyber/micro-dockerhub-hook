@@ -66,7 +66,7 @@ test('Missing payload.repository.repo_name', t => {
   }
 })
 
-test('Missing payload.repository.repo_name', t => {
+test('Repo does not exist', t => {
   try {
     const pathname = `/${config.token}`
     const payload = {
