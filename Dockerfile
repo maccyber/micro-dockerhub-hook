@@ -21,21 +21,21 @@ RUN pip install docker-compose
 # RUN apk add --no-cache make gcc g++ python
 
 # Bundle app source
-COPY . /src
+ENV WORKDIR /src
+COPY . ${WORKDIR}
 
 # Change working directory
-WORKDIR "/src"
+WORKDIR "${WORKDIR}"
 
 # Install dependencies
 RUN npm install --production
 
 # Env variables
-ENV SERVER_PORT 3000
+ENV SERVER_PORT ${PORT}
 # ENV TOKEN abc123
 # ENV DEBUG DISABLE
 
-# Expose 3000
-EXPOSE 3000
+EXPOSE ${PORT}
 
 # Startup
 ENTRYPOINT npm start

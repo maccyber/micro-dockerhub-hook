@@ -1,11 +1,12 @@
-version: '2'
+version: '3'
 services:
   dockerhub:
     image: maccyber/micro-dockerhub-hook
     # build: .
+    environment:
+      - PORT=${PORT}
     ports:
-      - "3000:3000"
-    env_file: docker.env
+      - "${PORT}:${PORT}"
     volumes:
       - ./scripts:/src/scripts
       - /var/run/docker.sock:/var/run/docker.sock
