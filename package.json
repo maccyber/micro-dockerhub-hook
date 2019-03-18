@@ -4,7 +4,7 @@
   "description": "docker hub webhook",
   "main": "index.js",
   "scripts": {
-    "start": "micro",
+    "start": "micro -l tcp://${npm_config_HOST}:${npm_config_PORT}",
     "dev": "micro-dev -H localhost",
     "test": "standard && ava",
     "coverage": "nyc ava",
