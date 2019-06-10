@@ -30,7 +30,7 @@
   },
   "homepage": "https://github.com/maccyber/micro-dockerhub-hook#readme",
   "devDependencies": {
-    "ava": "1.4.1",
+    "ava": "2.1.0",
     "axios": "0.19.0",
     "coveralls": "3.0.3",
     "micro-dev": "3.0.0",
