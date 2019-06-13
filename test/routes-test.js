@@ -59,3 +59,10 @@ test('regex test', async t => {
   const result = await axios.post(`${url}/${config.token}`, payload)
   t.is(result.status, 204)
 })
+
+test('ping route', async t => {
+  const url = await getUrl(srv)
+  const { data } = await axios.get(url + '/ping')
+  console.log(data)
+  t.is(data, 'pong')
+})
