@@ -52,3 +52,10 @@ test('with tag', async t => {
   const result = await axios.post(`${url}/${config.token}`, payload)
   t.is(result.status, 204)
 })
+
+test('regex test', async t => {
+  const url = await getUrl(srv)
+  const payload = require('./data/payload-version-tag.json')
+  const result = await axios.post(`${url}/${config.token}`, payload)
+  t.is(result.status, 204)
+})
